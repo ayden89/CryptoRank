@@ -34,6 +34,8 @@
 		50F9CE052C60C2CD00751FB3 /* ViewElementState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F9CE042C60C2CD00751FB3 /* ViewElementState.swift */; };
 		50F9CE082C60C3F000751FB3 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F9CE072C60C3F000751FB3 /* ErrorView.swift */; };
 		50F9CE0A2C60C41E00751FB3 /* View+ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F9CE092C60C41E00751FB3 /* View+ErrorView.swift */; };
+		50F9CE0C2C60CC6400751FB3 /* Error+AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F9CE0B2C60CC6400751FB3 /* Error+AppError.swift */; };
+		50F9CE0E2C60CDE500751FB3 /* Double+AbbreviationFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F9CE0D2C60CDE500751FB3 /* Double+AbbreviationFormat.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +85,8 @@
 		50F9CE042C60C2CD00751FB3 /* ViewElementState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewElementState.swift; sourceTree = "<group>"; };
 		50F9CE072C60C3F000751FB3 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		50F9CE092C60C41E00751FB3 /* View+ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+ErrorView.swift"; sourceTree = "<group>"; };
+		50F9CE0B2C60CC6400751FB3 /* Error+AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Error+AppError.swift"; sourceTree = "<group>"; };
+		50F9CE0D2C60CDE500751FB3 /* Double+AbbreviationFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+AbbreviationFormat.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -318,6 +322,8 @@
 			children = (
 				50F9CE012C60C24900751FB3 /* View+LoadingView.swift */,
 				50F9CE092C60C41E00751FB3 /* View+ErrorView.swift */,
+				50F9CE0B2C60CC6400751FB3 /* Error+AppError.swift */,
+				50F9CE0D2C60CDE500751FB3 /* Double+AbbreviationFormat.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -487,6 +493,7 @@
 				50F9CDA42C60989300751FB3 /* CryptoRankApp.swift in Sources */,
 				50F9CDEE2C60B99200751FB3 /* DataSourceContainer.swift in Sources */,
 				50F9CDDA2C60A5BE00751FB3 /* AssetItemDTO.swift in Sources */,
+				50F9CE0E2C60CDE500751FB3 /* Double+AbbreviationFormat.swift in Sources */,
 				50F9CDD12C609D6A00751FB3 /* CurrencyRemoteDataSource.swift in Sources */,
 				50F9CDFD2C60BEA600751FB3 /* TopCurrencyListView.swift in Sources */,
 				50F9CE082C60C3F000751FB3 /* ErrorView.swift in Sources */,
@@ -495,6 +502,7 @@
 				50F9CDEC2C60B59300751FB3 /* CurrencyRepository.swift in Sources */,
 				50F9CDDC2C60A5D200751FB3 /* BaseResponse.swift in Sources */,
 				50F9CDFB2C60BE6100751FB3 /* TopCurrencyListViewModel.swift in Sources */,
+				50F9CE0C2C60CC6400751FB3 /* Error+AppError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

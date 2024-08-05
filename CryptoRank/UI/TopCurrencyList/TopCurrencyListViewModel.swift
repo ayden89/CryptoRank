@@ -25,6 +25,29 @@ final class TopCurrencyListViewModel: TopCurrencyListViewModelProtocol {
     }
     
     private func fetchData() {
-        
+        Task {
+            await MainActor.run { [weak self] in
+                guard let self else { return }
+                
+                currencyListState = .loading(isFirstLoad: currencyListState == .notRequested)
+            }
+            
+            do {
+                let result = try await currencyRepository.fetchTop10AssetsAscending()
+                
+                await MainActor.run { [weak self] in
+                    guard let self else { return }
+                    
+                    currencyListState = .loaded(result)
+                }
+            } catch {
+                await MainActor.run { [weak self] in
+                    guard let self else { return }
+                    
+                    currencyListState = .error(error.appError())
+                }
+            }
+            
+        }
     }
 }
