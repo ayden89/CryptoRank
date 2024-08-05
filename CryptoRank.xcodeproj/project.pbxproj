@@ -21,6 +21,12 @@
 		50F9CDDE2C60A5FF00751FB3 /* AssetItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F9CDDD2C60A5FF00751FB3 /* AssetItem.swift */; };
 		50F9CDE02C60A8C600751FB3 /* TypeAlias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F9CDDF2C60A8C600751FB3 /* TypeAlias.swift */; };
 		50F9CDE22C60A9AB00751FB3 /* CurrencyRemoteDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F9CDE12C60A9AB00751FB3 /* CurrencyRemoteDataSourceProtocol.swift */; };
+		50F9CDE82C60B50100751FB3 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 50F9CDE72C60B50100751FB3 /* Swinject */; };
+		50F9CDEA2C60B56D00751FB3 /* CurrencyRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F9CDE92C60B56D00751FB3 /* CurrencyRepositoryProtocol.swift */; };
+		50F9CDEC2C60B59300751FB3 /* CurrencyRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F9CDEB2C60B59300751FB3 /* CurrencyRepository.swift */; };
+		50F9CDEE2C60B99200751FB3 /* DataSourceContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F9CDED2C60B99200751FB3 /* DataSourceContainer.swift */; };
+		50F9CDF12C60BA7100751FB3 /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F9CDF02C60BA7100751FB3 /* AppContainer.swift */; };
+		50F9CDF42C60BB1800751FB3 /* RepositoryContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F9CDF32C60BB1800751FB3 /* RepositoryContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +64,11 @@
 		50F9CDDD2C60A5FF00751FB3 /* AssetItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetItem.swift; sourceTree = "<group>"; };
 		50F9CDDF2C60A8C600751FB3 /* TypeAlias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeAlias.swift; sourceTree = "<group>"; };
 		50F9CDE12C60A9AB00751FB3 /* CurrencyRemoteDataSourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyRemoteDataSourceProtocol.swift; sourceTree = "<group>"; };
+		50F9CDE92C60B56D00751FB3 /* CurrencyRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyRepositoryProtocol.swift; sourceTree = "<group>"; };
+		50F9CDEB2C60B59300751FB3 /* CurrencyRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyRepository.swift; sourceTree = "<group>"; };
+		50F9CDED2C60B99200751FB3 /* DataSourceContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceContainer.swift; sourceTree = "<group>"; };
+		50F9CDF02C60BA7100751FB3 /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
+		50F9CDF32C60BB1800751FB3 /* RepositoryContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50F9CDE82C60B50100751FB3 /* Swinject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,14 +120,14 @@
 		50F9CDA22C60989300751FB3 /* CryptoRank */ = {
 			isa = PBXGroup;
 			children = (
-				50F9CDD52C60A59E00751FB3 /* Data */,
-				50F9CDD22C609DBC00751FB3 /* Error */,
-				50F9CDCD2C6099D800751FB3 /* DataSource */,
-				50F9CDA32C60989300751FB3 /* CryptoRankApp.swift */,
-				50F9CDA52C60989300751FB3 /* ContentView.swift */,
+				50F9CDEF2C60BA0A00751FB3 /* App */,
 				50F9CDA72C60989400751FB3 /* Assets.xcassets */,
+				50F9CDA52C60989300751FB3 /* ContentView.swift */,
+				50F9CDD52C60A59E00751FB3 /* Data */,
+				50F9CDCD2C6099D800751FB3 /* DataSource */,
+				50F9CDD22C609DBC00751FB3 /* Error */,
 				50F9CDA92C60989400751FB3 /* Preview Content */,
-				50F9CDDF2C60A8C600751FB3 /* TypeAlias.swift */,
+				50F9CDE32C60B42000751FB3 /* Repository */,
 			);
 			path = CryptoRank;
 			sourceTree = "<group>";
@@ -148,6 +160,7 @@
 		50F9CDCD2C6099D800751FB3 /* DataSource */ = {
 			isa = PBXGroup;
 			children = (
+				50F9CDE52C60B45800751FB3 /* DI */,
 				50F9CDCE2C6099E400751FB3 /* Remote */,
 			);
 			path = DataSource;
@@ -181,9 +194,10 @@
 		50F9CDD52C60A59E00751FB3 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				50F9CDD82C60A5B100751FB3 /* Response */,
 				50F9CDD72C60A5A700751FB3 /* Domain */,
 				50F9CDD62C60A5A300751FB3 /* DTO */,
+				50F9CDD82C60A5B100751FB3 /* Response */,
+				50F9CDDF2C60A8C600751FB3 /* TypeAlias.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -212,6 +226,57 @@
 			path = Response;
 			sourceTree = "<group>";
 		};
+		50F9CDE32C60B42000751FB3 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				50F9CDF22C60BAE900751FB3 /* DI */,
+				50F9CDE42C60B43300751FB3 /* Currency */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		50F9CDE42C60B43300751FB3 /* Currency */ = {
+			isa = PBXGroup;
+			children = (
+				50F9CDE92C60B56D00751FB3 /* CurrencyRepositoryProtocol.swift */,
+				50F9CDEB2C60B59300751FB3 /* CurrencyRepository.swift */,
+			);
+			path = Currency;
+			sourceTree = "<group>";
+		};
+		50F9CDE52C60B45800751FB3 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				50F9CDED2C60B99200751FB3 /* DataSourceContainer.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		50F9CDEF2C60BA0A00751FB3 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				50F9CDF52C60BC7100751FB3 /* DI */,
+				50F9CDA32C60989300751FB3 /* CryptoRankApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		50F9CDF22C60BAE900751FB3 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				50F9CDF32C60BB1800751FB3 /* RepositoryContainer.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		50F9CDF52C60BC7100751FB3 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				50F9CDF02C60BA7100751FB3 /* AppContainer.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -228,6 +293,9 @@
 			dependencies = (
 			);
 			name = CryptoRank;
+			packageProductDependencies = (
+				50F9CDE72C60B50100751FB3 /* Swinject */,
+			);
 			productName = CryptoRank;
 			productReference = 50F9CDA02C60989300751FB3 /* CryptoRank.app */;
 			productType = "com.apple.product-type.application";
@@ -300,6 +368,9 @@
 				Base,
 			);
 			mainGroup = 50F9CD972C60989300751FB3;
+			packageReferences = (
+				50F9CDE62C60B50100751FB3 /* XCRemoteSwiftPackageReference "Swinject" */,
+			);
 			productRefGroup = 50F9CDA12C60989300751FB3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -342,14 +413,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50F9CDF12C60BA7100751FB3 /* AppContainer.swift in Sources */,
 				50F9CDDE2C60A5FF00751FB3 /* AssetItem.swift in Sources */,
 				50F9CDA62C60989300751FB3 /* ContentView.swift in Sources */,
+				50F9CDF42C60BB1800751FB3 /* RepositoryContainer.swift in Sources */,
+				50F9CDEA2C60B56D00751FB3 /* CurrencyRepositoryProtocol.swift in Sources */,
 				50F9CDD42C609DC600751FB3 /* NetworkError.swift in Sources */,
 				50F9CDE22C60A9AB00751FB3 /* CurrencyRemoteDataSourceProtocol.swift in Sources */,
 				50F9CDA42C60989300751FB3 /* CryptoRankApp.swift in Sources */,
+				50F9CDEE2C60B99200751FB3 /* DataSourceContainer.swift in Sources */,
 				50F9CDDA2C60A5BE00751FB3 /* AssetItemDTO.swift in Sources */,
 				50F9CDD12C609D6A00751FB3 /* CurrencyRemoteDataSource.swift in Sources */,
 				50F9CDE02C60A8C600751FB3 /* TypeAlias.swift in Sources */,
+				50F9CDEC2C60B59300751FB3 /* CurrencyRepository.swift in Sources */,
 				50F9CDDC2C60A5D200751FB3 /* BaseResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -680,6 +756,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		50F9CDE62C60B50100751FB3 /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject.git";
+			requirement = {
+				kind = exactVersion;
+				version = 2.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		50F9CDE72C60B50100751FB3 /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 50F9CDE62C60B50100751FB3 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 50F9CD982C60989300751FB3 /* Project object */;
 }

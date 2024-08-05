@@ -7,7 +7,7 @@
 
 import Foundation
 
-class CurrencyRemoteDataSource {
+class CurrencyRemoteDataSource: CurrencyRemoteDataSourceProtocol {
     let baseURL = URL(string: "https://api.coincap.io/v2")!
     
     private func fetchData<T: Decodable>(from endpoint: String, queryItems: [URLQueryItem] = []) async throws -> T {
