@@ -32,6 +32,18 @@ struct AssetItem: Equatable, Identifiable {
         return String(format: "%.2f%%", changePercentLast24Hr)
     }
     
+    var formattedMarketCap: String {
+        return "$\(marketCapInUsd.abbreviationFormat())"
+    }
+    
+    var formattedVolumeInUsdLast24Hr: String {
+        return "$\(volumeInUsdLast24Hr.abbreviationFormat())"
+    }
+    
+    var formattedSupply: String {
+        return supply.abbreviationFormat()
+    }
+    
     var last24ChangeType: ChangeType {
         switch changePercentLast24Hr {
         case let x where x < 0:

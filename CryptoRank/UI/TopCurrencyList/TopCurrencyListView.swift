@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Swinject
 
 struct TopCurrencyListView<T: TopCurrencyListViewModelProtocol>: View {
     @StateObject var viewModel: T
@@ -21,19 +22,21 @@ struct TopCurrencyListView<T: TopCurrencyListViewModelProtocol>: View {
                 )
                 .edgesIgnoringSafeArea(.all)
 
-                VStack(spacing: 0) {
+                VStack(alignment: .leading,
+                       spacing: 0) {
                     Text("topCurrency.title.main")
                         .font(Font.custom("Poppins-Bold", size: 32.0))
                         .textCase(.uppercase)
                         .padding(16.0)
+                        .multilineTextAlignment(.leading)
                     ZStack {
                         switch viewModel.currencyListState {
-                        case .loading, .notRequested:
+                        case .loading, .notRequested, .loadingWithPreviousData:
                             loadingView()
                         case .loaded(let data):
                             currencyListView(items: data)
                         case .error:
-                            ErrorView(onRetry: viewModel.handleRetryButtonTap)
+                            errorView(onRetry: viewModel.handleRetryButtonTap)
                         }
                     }
                 }
@@ -60,7 +63,17 @@ extension TopCurrencyListView {
     func currencyListView(items: [AssetItem]) -> some View {
         List {
             ForEach(items) { item in
-                currencyListItemView(item: item)
+                
+                ZStack(content: {
+                    currencyListItemView(item: item)
+
+                    NavigationLink(destination: Container.currencyDetailContainer.resolve(CurrencyDetailView<CurrencyDetailViewModel>.self,
+                                                                                          argument: CurrencyDetailParams(item: item))) {
+                        EmptyView()
+                    }
+                    .buttonStyle(PlainButtonStyle())
+                    .opacity(0)
+                })
             }
             .listRowBackground(Color.clear)
             .listRowSeparator(.hidden)

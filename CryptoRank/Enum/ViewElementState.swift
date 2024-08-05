@@ -9,7 +9,8 @@ import Foundation
 
 enum ViewElementState<T: Equatable>: Equatable {
     case loading(isFirstLoad: Bool)
-    case loaded(T)
+    case loadingWithPreviousData(data: T)
+    case loaded(data: T)
     case notRequested
     case error(AppError)
     

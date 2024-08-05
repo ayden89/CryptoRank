@@ -39,6 +39,11 @@
 		50F9CE132C60D87C00751FB3 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50F9CE112C60D87800751FB3 /* Poppins-Regular.ttf */; };
 		50F9CE142C60D87C00751FB3 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50F9CE122C60D87800751FB3 /* Poppins-Bold.ttf */; };
 		50F9CE172C60DD0900751FB3 /* ChangeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F9CE162C60DD0900751FB3 /* ChangeType.swift */; };
+		50F9CE1A2C60F38500751FB3 /* CurrencyDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F9CE192C60F38500751FB3 /* CurrencyDetailView.swift */; };
+		50F9CE1C2C60F3B300751FB3 /* CurrencyDetailContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F9CE1B2C60F3B300751FB3 /* CurrencyDetailContract.swift */; };
+		50F9CE1E2C60F3EF00751FB3 /* CurrencyDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F9CE1D2C60F3EF00751FB3 /* CurrencyDetailViewModel.swift */; };
+		50F9CE202C60F43200751FB3 /* CurrencyDetailContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F9CE1F2C60F43200751FB3 /* CurrencyDetailContainer.swift */; };
+		50F9CE232C61007A00751FB3 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 50F9CE222C61007A00751FB3 /* Localizable.xcstrings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +99,11 @@
 		50F9CE122C60D87800751FB3 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
 		50F9CE152C60D92900751FB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		50F9CE162C60DD0900751FB3 /* ChangeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeType.swift; sourceTree = "<group>"; };
+		50F9CE192C60F38500751FB3 /* CurrencyDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyDetailView.swift; sourceTree = "<group>"; };
+		50F9CE1B2C60F3B300751FB3 /* CurrencyDetailContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyDetailContract.swift; sourceTree = "<group>"; };
+		50F9CE1D2C60F3EF00751FB3 /* CurrencyDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyDetailViewModel.swift; sourceTree = "<group>"; };
+		50F9CE1F2C60F43200751FB3 /* CurrencyDetailContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyDetailContainer.swift; sourceTree = "<group>"; };
+		50F9CE222C61007A00751FB3 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -309,6 +319,7 @@
 		50F9CDF62C60BD0800751FB3 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				50F9CE182C60F35C00751FB3 /* CurrencyDetail */,
 				50F9CE062C60C3E600751FB3 /* Reusable */,
 				50F9CDF72C60BD1900751FB3 /* TopCurrencyList */,
 			);
@@ -357,6 +368,7 @@
 		50F9CE0F2C60D86000751FB3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				50F9CE212C61006A00751FB3 /* String */,
 				50F9CE102C60D86800751FB3 /* Font */,
 			);
 			path = Resources;
@@ -369,6 +381,25 @@
 				50F9CE112C60D87800751FB3 /* Poppins-Regular.ttf */,
 			);
 			path = Font;
+			sourceTree = "<group>";
+		};
+		50F9CE182C60F35C00751FB3 /* CurrencyDetail */ = {
+			isa = PBXGroup;
+			children = (
+				50F9CE192C60F38500751FB3 /* CurrencyDetailView.swift */,
+				50F9CE1B2C60F3B300751FB3 /* CurrencyDetailContract.swift */,
+				50F9CE1D2C60F3EF00751FB3 /* CurrencyDetailViewModel.swift */,
+				50F9CE1F2C60F43200751FB3 /* CurrencyDetailContainer.swift */,
+			);
+			path = CurrencyDetail;
+			sourceTree = "<group>";
+		};
+		50F9CE212C61006A00751FB3 /* String */ = {
+			isa = PBXGroup;
+			children = (
+				50F9CE222C61007A00751FB3 /* Localizable.xcstrings */,
+			);
+			path = String;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -482,6 +513,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				50F9CDAB2C60989400751FB3 /* Preview Assets.xcassets in Resources */,
+				50F9CE232C61007A00751FB3 /* Localizable.xcstrings in Resources */,
 				50F9CE132C60D87C00751FB3 /* Poppins-Regular.ttf in Resources */,
 				50F9CE142C60D87C00751FB3 /* Poppins-Bold.ttf in Resources */,
 				50F9CDA82C60989400751FB3 /* Assets.xcassets in Resources */,
@@ -510,6 +542,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				50F9CDF12C60BA7100751FB3 /* AppContainer.swift in Sources */,
+				50F9CE1A2C60F38500751FB3 /* CurrencyDetailView.swift in Sources */,
 				50F9CE052C60C2CD00751FB3 /* ViewElementState.swift in Sources */,
 				50F9CDDE2C60A5FF00751FB3 /* AssetItem.swift in Sources */,
 				50F9CE172C60DD0900751FB3 /* ChangeType.swift in Sources */,
@@ -517,12 +550,14 @@
 				50F9CDF42C60BB1800751FB3 /* RepositoryContainer.swift in Sources */,
 				50F9CDEA2C60B56D00751FB3 /* CurrencyRepositoryProtocol.swift in Sources */,
 				50F9CDD42C609DC600751FB3 /* AppError.swift in Sources */,
+				50F9CE202C60F43200751FB3 /* CurrencyDetailContainer.swift in Sources */,
 				50F9CDF92C60BE3200751FB3 /* TopCurrencyListContract.swift in Sources */,
 				50F9CDE22C60A9AB00751FB3 /* CurrencyRemoteDataSourceProtocol.swift in Sources */,
 				50F9CDFF2C60BF0A00751FB3 /* TopCurrencyListContainer.swift in Sources */,
 				50F9CDA42C60989300751FB3 /* CryptoRankApp.swift in Sources */,
 				50F9CDEE2C60B99200751FB3 /* DataSourceContainer.swift in Sources */,
 				50F9CDDA2C60A5BE00751FB3 /* AssetItemDTO.swift in Sources */,
+				50F9CE1C2C60F3B300751FB3 /* CurrencyDetailContract.swift in Sources */,
 				50F9CE0E2C60CDE500751FB3 /* Double+AbbreviationFormat.swift in Sources */,
 				50F9CDD12C609D6A00751FB3 /* CurrencyRemoteDataSource.swift in Sources */,
 				50F9CDFD2C60BEA600751FB3 /* TopCurrencyListView.swift in Sources */,
@@ -531,6 +566,7 @@
 				50F9CDE02C60A8C600751FB3 /* TypeAlias.swift in Sources */,
 				50F9CDEC2C60B59300751FB3 /* CurrencyRepository.swift in Sources */,
 				50F9CDDC2C60A5D200751FB3 /* BaseResponse.swift in Sources */,
+				50F9CE1E2C60F3EF00751FB3 /* CurrencyDetailViewModel.swift in Sources */,
 				50F9CDFB2C60BE6100751FB3 /* TopCurrencyListViewModel.swift in Sources */,
 				50F9CE0C2C60CC6400751FB3 /* Error+AppError.swift in Sources */,
 			);

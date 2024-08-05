@@ -1,0 +1,86 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "currencyDetail.title.change24hour" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Change (24hr)"
+          }
+        }
+      }
+    },
+    "currencyDetail.title.marketCap" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Market Cap"
+          }
+        }
+      }
+    },
+    "currencyDetail.title.price" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Price"
+          }
+        }
+      }
+    },
+    "currencyDetail.title.supply" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supply"
+          }
+        }
+      }
+    },
+    "currencyDetail.title.volume24hour" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Volume (24hr)"
+          }
+        }
+      }
+    },
+    "topCurrency.title.main" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Coins"
+          }
+        }
+      }
+    },
+    "view.error.title.button.retry" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Retry"
+          }
+        }
+      }
+    },
+    "view.error.title.main" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Error occurred. Please try again."
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}
