@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct AssetItem {
+struct AssetItem: Equatable {
     let id: String
     let rank: Int
     let symbol: String

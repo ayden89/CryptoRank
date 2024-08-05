@@ -8,14 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		50F9CDA42C60989300751FB3 /* CryptoRankApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F9CDA32C60989300751FB3 /* CryptoRankApp.swift */; };
-		50F9CDA62C60989300751FB3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F9CDA52C60989300751FB3 /* ContentView.swift */; };
 		50F9CDA82C60989400751FB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50F9CDA72C60989400751FB3 /* Assets.xcassets */; };
 		50F9CDAB2C60989400751FB3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50F9CDAA2C60989400751FB3 /* Preview Assets.xcassets */; };
 		50F9CDB52C60989400751FB3 /* CryptoRankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F9CDB42C60989400751FB3 /* CryptoRankTests.swift */; };
 		50F9CDBF2C60989400751FB3 /* CryptoRankUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F9CDBE2C60989400751FB3 /* CryptoRankUITests.swift */; };
 		50F9CDC12C60989400751FB3 /* CryptoRankUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F9CDC02C60989400751FB3 /* CryptoRankUITestsLaunchTests.swift */; };
 		50F9CDD12C609D6A00751FB3 /* CurrencyRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F9CDD02C609D6A00751FB3 /* CurrencyRemoteDataSource.swift */; };
-		50F9CDD42C609DC600751FB3 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F9CDD32C609DC600751FB3 /* NetworkError.swift */; };
+		50F9CDD42C609DC600751FB3 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F9CDD32C609DC600751FB3 /* AppError.swift */; };
 		50F9CDDA2C60A5BE00751FB3 /* AssetItemDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F9CDD92C60A5BE00751FB3 /* AssetItemDTO.swift */; };
 		50F9CDDC2C60A5D200751FB3 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F9CDDB2C60A5D200751FB3 /* BaseResponse.swift */; };
 		50F9CDDE2C60A5FF00751FB3 /* AssetItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F9CDDD2C60A5FF00751FB3 /* AssetItem.swift */; };
@@ -27,6 +26,14 @@
 		50F9CDEE2C60B99200751FB3 /* DataSourceContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F9CDED2C60B99200751FB3 /* DataSourceContainer.swift */; };
 		50F9CDF12C60BA7100751FB3 /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F9CDF02C60BA7100751FB3 /* AppContainer.swift */; };
 		50F9CDF42C60BB1800751FB3 /* RepositoryContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F9CDF32C60BB1800751FB3 /* RepositoryContainer.swift */; };
+		50F9CDF92C60BE3200751FB3 /* TopCurrencyListContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F9CDF82C60BE3200751FB3 /* TopCurrencyListContract.swift */; };
+		50F9CDFB2C60BE6100751FB3 /* TopCurrencyListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F9CDFA2C60BE6100751FB3 /* TopCurrencyListViewModel.swift */; };
+		50F9CDFD2C60BEA600751FB3 /* TopCurrencyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F9CDFC2C60BEA600751FB3 /* TopCurrencyListView.swift */; };
+		50F9CDFF2C60BF0A00751FB3 /* TopCurrencyListContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F9CDFE2C60BF0A00751FB3 /* TopCurrencyListContainer.swift */; };
+		50F9CE022C60C24900751FB3 /* View+LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F9CE012C60C24900751FB3 /* View+LoadingView.swift */; };
+		50F9CE052C60C2CD00751FB3 /* ViewElementState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F9CE042C60C2CD00751FB3 /* ViewElementState.swift */; };
+		50F9CE082C60C3F000751FB3 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F9CE072C60C3F000751FB3 /* ErrorView.swift */; };
+		50F9CE0A2C60C41E00751FB3 /* View+ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F9CE092C60C41E00751FB3 /* View+ErrorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +56,6 @@
 /* Begin PBXFileReference section */
 		50F9CDA02C60989300751FB3 /* CryptoRank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoRank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50F9CDA32C60989300751FB3 /* CryptoRankApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoRankApp.swift; sourceTree = "<group>"; };
-		50F9CDA52C60989300751FB3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		50F9CDA72C60989400751FB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50F9CDAA2C60989400751FB3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		50F9CDB02C60989400751FB3 /* CryptoRankTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoRankTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,7 +64,7 @@
 		50F9CDBE2C60989400751FB3 /* CryptoRankUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoRankUITests.swift; sourceTree = "<group>"; };
 		50F9CDC02C60989400751FB3 /* CryptoRankUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoRankUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		50F9CDD02C609D6A00751FB3 /* CurrencyRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyRemoteDataSource.swift; sourceTree = "<group>"; };
-		50F9CDD32C609DC600751FB3 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		50F9CDD32C609DC600751FB3 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		50F9CDD92C60A5BE00751FB3 /* AssetItemDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetItemDTO.swift; sourceTree = "<group>"; };
 		50F9CDDB2C60A5D200751FB3 /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
 		50F9CDDD2C60A5FF00751FB3 /* AssetItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetItem.swift; sourceTree = "<group>"; };
@@ -69,6 +75,14 @@
 		50F9CDED2C60B99200751FB3 /* DataSourceContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceContainer.swift; sourceTree = "<group>"; };
 		50F9CDF02C60BA7100751FB3 /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
 		50F9CDF32C60BB1800751FB3 /* RepositoryContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryContainer.swift; sourceTree = "<group>"; };
+		50F9CDF82C60BE3200751FB3 /* TopCurrencyListContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopCurrencyListContract.swift; sourceTree = "<group>"; };
+		50F9CDFA2C60BE6100751FB3 /* TopCurrencyListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopCurrencyListViewModel.swift; sourceTree = "<group>"; };
+		50F9CDFC2C60BEA600751FB3 /* TopCurrencyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopCurrencyListView.swift; sourceTree = "<group>"; };
+		50F9CDFE2C60BF0A00751FB3 /* TopCurrencyListContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopCurrencyListContainer.swift; sourceTree = "<group>"; };
+		50F9CE012C60C24900751FB3 /* View+LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+LoadingView.swift"; sourceTree = "<group>"; };
+		50F9CE042C60C2CD00751FB3 /* ViewElementState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewElementState.swift; sourceTree = "<group>"; };
+		50F9CE072C60C3F000751FB3 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		50F9CE092C60C41E00751FB3 /* View+ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+ErrorView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,14 +134,16 @@
 		50F9CDA22C60989300751FB3 /* CryptoRank */ = {
 			isa = PBXGroup;
 			children = (
+				50F9CE032C60C2C400751FB3 /* Enum */,
+				50F9CE002C60C23300751FB3 /* Extension */,
 				50F9CDEF2C60BA0A00751FB3 /* App */,
 				50F9CDA72C60989400751FB3 /* Assets.xcassets */,
-				50F9CDA52C60989300751FB3 /* ContentView.swift */,
 				50F9CDD52C60A59E00751FB3 /* Data */,
 				50F9CDCD2C6099D800751FB3 /* DataSource */,
 				50F9CDD22C609DBC00751FB3 /* Error */,
 				50F9CDA92C60989400751FB3 /* Preview Content */,
 				50F9CDE32C60B42000751FB3 /* Repository */,
+				50F9CDF62C60BD0800751FB3 /* UI */,
 			);
 			path = CryptoRank;
 			sourceTree = "<group>";
@@ -186,7 +202,7 @@
 		50F9CDD22C609DBC00751FB3 /* Error */ = {
 			isa = PBXGroup;
 			children = (
-				50F9CDD32C609DC600751FB3 /* NetworkError.swift */,
+				50F9CDD32C609DC600751FB3 /* AppError.swift */,
 			);
 			path = Error;
 			sourceTree = "<group>";
@@ -275,6 +291,51 @@
 				50F9CDF02C60BA7100751FB3 /* AppContainer.swift */,
 			);
 			path = DI;
+			sourceTree = "<group>";
+		};
+		50F9CDF62C60BD0800751FB3 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				50F9CE062C60C3E600751FB3 /* Reusable */,
+				50F9CDF72C60BD1900751FB3 /* TopCurrencyList */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		50F9CDF72C60BD1900751FB3 /* TopCurrencyList */ = {
+			isa = PBXGroup;
+			children = (
+				50F9CDFE2C60BF0A00751FB3 /* TopCurrencyListContainer.swift */,
+				50F9CDF82C60BE3200751FB3 /* TopCurrencyListContract.swift */,
+				50F9CDFC2C60BEA600751FB3 /* TopCurrencyListView.swift */,
+				50F9CDFA2C60BE6100751FB3 /* TopCurrencyListViewModel.swift */,
+			);
+			path = TopCurrencyList;
+			sourceTree = "<group>";
+		};
+		50F9CE002C60C23300751FB3 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				50F9CE012C60C24900751FB3 /* View+LoadingView.swift */,
+				50F9CE092C60C41E00751FB3 /* View+ErrorView.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		50F9CE032C60C2C400751FB3 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				50F9CE042C60C2CD00751FB3 /* ViewElementState.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		50F9CE062C60C3E600751FB3 /* Reusable */ = {
+			isa = PBXGroup;
+			children = (
+				50F9CE072C60C3F000751FB3 /* ErrorView.swift */,
+			);
+			path = Reusable;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -414,19 +475,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				50F9CDF12C60BA7100751FB3 /* AppContainer.swift in Sources */,
+				50F9CE052C60C2CD00751FB3 /* ViewElementState.swift in Sources */,
 				50F9CDDE2C60A5FF00751FB3 /* AssetItem.swift in Sources */,
-				50F9CDA62C60989300751FB3 /* ContentView.swift in Sources */,
+				50F9CE022C60C24900751FB3 /* View+LoadingView.swift in Sources */,
 				50F9CDF42C60BB1800751FB3 /* RepositoryContainer.swift in Sources */,
 				50F9CDEA2C60B56D00751FB3 /* CurrencyRepositoryProtocol.swift in Sources */,
-				50F9CDD42C609DC600751FB3 /* NetworkError.swift in Sources */,
+				50F9CDD42C609DC600751FB3 /* AppError.swift in Sources */,
+				50F9CDF92C60BE3200751FB3 /* TopCurrencyListContract.swift in Sources */,
 				50F9CDE22C60A9AB00751FB3 /* CurrencyRemoteDataSourceProtocol.swift in Sources */,
+				50F9CDFF2C60BF0A00751FB3 /* TopCurrencyListContainer.swift in Sources */,
 				50F9CDA42C60989300751FB3 /* CryptoRankApp.swift in Sources */,
 				50F9CDEE2C60B99200751FB3 /* DataSourceContainer.swift in Sources */,
 				50F9CDDA2C60A5BE00751FB3 /* AssetItemDTO.swift in Sources */,
 				50F9CDD12C609D6A00751FB3 /* CurrencyRemoteDataSource.swift in Sources */,
+				50F9CDFD2C60BEA600751FB3 /* TopCurrencyListView.swift in Sources */,
+				50F9CE082C60C3F000751FB3 /* ErrorView.swift in Sources */,
+				50F9CE0A2C60C41E00751FB3 /* View+ErrorView.swift in Sources */,
 				50F9CDE02C60A8C600751FB3 /* TypeAlias.swift in Sources */,
 				50F9CDEC2C60B59300751FB3 /* CurrencyRepository.swift in Sources */,
 				50F9CDDC2C60A5D200751FB3 /* BaseResponse.swift in Sources */,
+				50F9CDFB2C60BE6100751FB3 /* TopCurrencyListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

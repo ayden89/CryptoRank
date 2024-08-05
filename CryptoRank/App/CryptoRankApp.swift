@@ -6,12 +6,13 @@
 //
 
 import SwiftUI
+import Swinject
 
 @main
 struct CryptoRankApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Container.topCurrencyListContainer.resolve(TopCurrencyListView<TopCurrencyListViewModel>.self)
         }
     }
 }

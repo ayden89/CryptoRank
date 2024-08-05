@@ -7,10 +7,10 @@
 
 import Foundation
 
-enum NetworkError: LocalizedError {
+enum AppError: LocalizedError, Equatable {
     case badServerResponse(statusCode: Int)
     case decodingError
-    case unknown(Error)
+    case unknown
     
     var errorDescription: String? {
         switch self {
@@ -18,8 +18,8 @@ enum NetworkError: LocalizedError {
             return "Server responded with status code \(statusCode)."
         case .decodingError:
             return "Failed to decode the response."
-        case .unknown(let error):
-            return error.localizedDescription
+        case .unknown:
+            return "Unknown error occurred."
         }
     }
 }

@@ -12,7 +12,7 @@ extension Container {
     public static let dataSourceContainer: Container = {
         let container = Container(parent: appContainer)
         
-        container.register(CurrencyRemoteDataSourceProtocol.self, factory: { resolver in CurrencyRemoteDataSource() })
+        container.register(CurrencyRemoteDataSourceProtocol.self, factory: { _ in CurrencyRemoteDataSource() })
         
         return container
     }()

@@ -21,21 +21,21 @@ class CurrencyRemoteDataSource: CurrencyRemoteDataSourceProtocol {
             let (data, response) = try await URLSession.shared.data(from: url)
             
             guard let httpResponse = response as? HTTPURLResponse else {
-                throw NetworkError.unknown(URLError(.badServerResponse))
+                throw AppError.unknown
             }
             
             guard httpResponse.statusCode == 200 else {
-                throw NetworkError.badServerResponse(statusCode: httpResponse.statusCode)
+                throw AppError.badServerResponse(statusCode: httpResponse.statusCode)
             }
             
             let decoder = JSONDecoder()
             do {
                 return try decoder.decode(T.self, from: data)
             } catch {
-                throw NetworkError.decodingError
+                throw AppError.decodingError
             }
         } catch {
-            throw NetworkError.unknown(error)
+            throw AppError.unknown
         }
     }
     

@@ -12,8 +12,11 @@ extension Container {
     public static let repositoryContainer: Container = {
         let container = Container()
         
+        let dataSourceContainer = Container.dataSourceContainer.synchronize()
+        
         container.register(CurrencyRepositoryProtocol.self,
-                           factory: { resolver in CurrencyRepository(remoteDataSource: Container.dataSourceContainer.resolve(CurrencyRemoteDataSourceProtocol.self)!) })
+                           factory: { resolver in CurrencyRepository(remoteDataSource: dataSourceContainer.resolve(CurrencyRemoteDataSourceProtocol.self)!) })
+        .inObjectScope(.container)
         
         return container
     }()
