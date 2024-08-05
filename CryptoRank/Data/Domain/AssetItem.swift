@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct AssetItem: Equatable {
+struct AssetItem: Equatable, Identifiable {
     let id: String
     let rank: Int
     let symbol: String
@@ -22,6 +22,25 @@ struct AssetItem: Equatable {
     
     var iconImageUrl: URL? {
         return URL(string: "https://assets.coincap.io/assets/icons/\(symbol.lowercased())@2x.png")
+    }
+    
+    var formattedPriceInUsd: String {
+        return "$\(priceInUsd.abbreviationFormat())"
+    }
+    
+    var formattedChangePercentLast24Hr: String {
+        return String(format: "%.2f%%", changePercentLast24Hr)
+    }
+    
+    var last24ChangeType: ChangeType {
+        switch changePercentLast24Hr {
+        case let x where x < 0:
+            return .decreasing
+        case let x where x > 0:
+            return .increasing
+        default:
+            return .noChange
+        }
     }
     
     init?(from dto: AssetItemDTO) {

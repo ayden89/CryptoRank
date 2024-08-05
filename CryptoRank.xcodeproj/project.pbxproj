@@ -36,6 +36,9 @@
 		50F9CE0A2C60C41E00751FB3 /* View+ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F9CE092C60C41E00751FB3 /* View+ErrorView.swift */; };
 		50F9CE0C2C60CC6400751FB3 /* Error+AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F9CE0B2C60CC6400751FB3 /* Error+AppError.swift */; };
 		50F9CE0E2C60CDE500751FB3 /* Double+AbbreviationFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F9CE0D2C60CDE500751FB3 /* Double+AbbreviationFormat.swift */; };
+		50F9CE132C60D87C00751FB3 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50F9CE112C60D87800751FB3 /* Poppins-Regular.ttf */; };
+		50F9CE142C60D87C00751FB3 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50F9CE122C60D87800751FB3 /* Poppins-Bold.ttf */; };
+		50F9CE172C60DD0900751FB3 /* ChangeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F9CE162C60DD0900751FB3 /* ChangeType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +90,10 @@
 		50F9CE092C60C41E00751FB3 /* View+ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+ErrorView.swift"; sourceTree = "<group>"; };
 		50F9CE0B2C60CC6400751FB3 /* Error+AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Error+AppError.swift"; sourceTree = "<group>"; };
 		50F9CE0D2C60CDE500751FB3 /* Double+AbbreviationFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+AbbreviationFormat.swift"; sourceTree = "<group>"; };
+		50F9CE112C60D87800751FB3 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		50F9CE122C60D87800751FB3 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		50F9CE152C60D92900751FB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		50F9CE162C60DD0900751FB3 /* ChangeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +145,8 @@
 		50F9CDA22C60989300751FB3 /* CryptoRank */ = {
 			isa = PBXGroup;
 			children = (
+				50F9CE152C60D92900751FB3 /* Info.plist */,
+				50F9CE0F2C60D86000751FB3 /* Resources */,
 				50F9CE032C60C2C400751FB3 /* Enum */,
 				50F9CE002C60C23300751FB3 /* Extension */,
 				50F9CDEF2C60BA0A00751FB3 /* App */,
@@ -332,6 +341,7 @@
 			isa = PBXGroup;
 			children = (
 				50F9CE042C60C2CD00751FB3 /* ViewElementState.swift */,
+				50F9CE162C60DD0900751FB3 /* ChangeType.swift */,
 			);
 			path = Enum;
 			sourceTree = "<group>";
@@ -342,6 +352,23 @@
 				50F9CE072C60C3F000751FB3 /* ErrorView.swift */,
 			);
 			path = Reusable;
+			sourceTree = "<group>";
+		};
+		50F9CE0F2C60D86000751FB3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				50F9CE102C60D86800751FB3 /* Font */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		50F9CE102C60D86800751FB3 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				50F9CE122C60D87800751FB3 /* Poppins-Bold.ttf */,
+				50F9CE112C60D87800751FB3 /* Poppins-Regular.ttf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -455,6 +482,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				50F9CDAB2C60989400751FB3 /* Preview Assets.xcassets in Resources */,
+				50F9CE132C60D87C00751FB3 /* Poppins-Regular.ttf in Resources */,
+				50F9CE142C60D87C00751FB3 /* Poppins-Bold.ttf in Resources */,
 				50F9CDA82C60989400751FB3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -483,6 +512,7 @@
 				50F9CDF12C60BA7100751FB3 /* AppContainer.swift in Sources */,
 				50F9CE052C60C2CD00751FB3 /* ViewElementState.swift in Sources */,
 				50F9CDDE2C60A5FF00751FB3 /* AssetItem.swift in Sources */,
+				50F9CE172C60DD0900751FB3 /* ChangeType.swift in Sources */,
 				50F9CE022C60C24900751FB3 /* View+LoadingView.swift in Sources */,
 				50F9CDF42C60BB1800751FB3 /* RepositoryContainer.swift in Sources */,
 				50F9CDEA2C60B56D00751FB3 /* CurrencyRepositoryProtocol.swift in Sources */,
@@ -669,6 +699,7 @@
 				DEVELOPMENT_TEAM = D2JR53T83U;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CryptoRank/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -698,6 +729,7 @@
 				DEVELOPMENT_TEAM = D2JR53T83U;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CryptoRank/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
