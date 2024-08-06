@@ -15,11 +15,11 @@ enum AppError: LocalizedError, Equatable {
     var errorDescription: String? {
         switch self {
         case .badServerResponse(let statusCode):
-            return "Server responded with status code \(statusCode)."
+            return String(localized: LocalizedStringResource("general.error.title.badServerResponse.\(statusCode)"))
         case .decodingError:
-            return "Failed to decode the response."
+            return String(localized: LocalizedStringResource(stringLiteral: "general.error.title.decodingError"))
         case .unknown:
-            return "Unknown error occurred."
+            return String(localized: LocalizedStringResource(stringLiteral: "general.error.title.unknown"))
         }
     }
 }

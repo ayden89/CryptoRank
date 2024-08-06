@@ -51,8 +51,35 @@
         }
       }
     },
-    "Example" : {
-
+    "general.error.title.badServerResponse.%lld" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Server responded with status code %lld."
+          }
+        }
+      }
+    },
+    "general.error.title.decodingError" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Failed to decode the response."
+          }
+        }
+      }
+    },
+    "general.error.title.unknown" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unknown error occurred."
+          }
+        }
+      }
     },
     "topCurrency.title.main" : {
       "localizations" : {

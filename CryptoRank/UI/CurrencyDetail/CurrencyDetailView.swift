@@ -44,7 +44,6 @@ struct CurrencyDetailView<T: CurrencyDetailViewModelProtocol>: View {
              .frame(maxHeight: .infinity)
         }
         .navigationBarTitleDisplayMode(.inline)
-        .navigationTitle("Example")
         .onAppear(perform: {
             viewModel.onAppear()
         })
