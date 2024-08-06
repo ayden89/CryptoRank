@@ -39,7 +39,7 @@ final class CurrencyDetailViewModelTests: XCTestCase {
         cancellables.removeAll()
     }
 
-    func testWhenHasItemShouldMoveToLoadedState() throws {
+    func testStateTransitionWhenHasItemShouldMoveToLoadedState() throws {
         let loadingWithPreviousDataExpectation = XCTestExpectation(description: "Moves to loadingWithPreviousData state")
         let loadedExpectation = XCTestExpectation(description: "Moves to loaded state")
         
@@ -75,7 +75,7 @@ final class CurrencyDetailViewModelTests: XCTestCase {
              timeout: 1.0)
     }
     
-    func testWhenHasErrorShouldMoveToErrorState() throws {
+    func testStateTransitionWhenHasErrorShouldMoveToErrorState() throws {
         let loadingWithPreviousDataExpectation = XCTestExpectation(description: "Moves to loadingWithPreviousData state")
         let errorExpectation = XCTestExpectation(description: "Moves to error state")
 

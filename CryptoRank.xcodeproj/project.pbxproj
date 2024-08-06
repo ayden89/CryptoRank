@@ -46,6 +46,8 @@
 		50F9CE232C61007A00751FB3 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 50F9CE222C61007A00751FB3 /* Localizable.xcstrings */; };
 		50F9CE262C620A6000751FB3 /* MockCurrencyRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F9CE252C620A6000751FB3 /* MockCurrencyRepository.swift */; };
 		50F9CE2A2C62159D00751FB3 /* CurrencyDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F9CE292C62159D00751FB3 /* CurrencyDetailViewModelTests.swift */; };
+		50F9CE2C2C62287E00751FB3 /* CurrencyRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F9CE2B2C62287E00751FB3 /* CurrencyRepositoryTests.swift */; };
+		50F9CE2E2C6228B500751FB3 /* MockRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F9CE2D2C6228B500751FB3 /* MockRemoteDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +110,8 @@
 		50F9CE222C61007A00751FB3 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		50F9CE252C620A6000751FB3 /* MockCurrencyRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCurrencyRepository.swift; sourceTree = "<group>"; };
 		50F9CE292C62159D00751FB3 /* CurrencyDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyDetailViewModelTests.swift; sourceTree = "<group>"; };
+		50F9CE2B2C62287E00751FB3 /* CurrencyRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyRepositoryTests.swift; sourceTree = "<group>"; };
+		50F9CE2D2C6228B500751FB3 /* MockRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRemoteDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +193,7 @@
 				50F9CE242C6209F700751FB3 /* Mock */,
 				50F9CDB42C60989400751FB3 /* TopCurrencyListViewModelTests.swift */,
 				50F9CE292C62159D00751FB3 /* CurrencyDetailViewModelTests.swift */,
+				50F9CE2B2C62287E00751FB3 /* CurrencyRepositoryTests.swift */,
 			);
 			path = CryptoRankTests;
 			sourceTree = "<group>";
@@ -412,6 +417,7 @@
 			isa = PBXGroup;
 			children = (
 				50F9CE252C620A6000751FB3 /* MockCurrencyRepository.swift */,
+				50F9CE2D2C6228B500751FB3 /* MockRemoteDataSource.swift */,
 			);
 			path = Mock;
 			sourceTree = "<group>";
@@ -591,7 +597,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				50F9CE2A2C62159D00751FB3 /* CurrencyDetailViewModelTests.swift in Sources */,
+				50F9CE2E2C6228B500751FB3 /* MockRemoteDataSource.swift in Sources */,
 				50F9CE262C620A6000751FB3 /* MockCurrencyRepository.swift in Sources */,
+				50F9CE2C2C62287E00751FB3 /* CurrencyRepositoryTests.swift in Sources */,
 				50F9CDB52C60989400751FB3 /* TopCurrencyListViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

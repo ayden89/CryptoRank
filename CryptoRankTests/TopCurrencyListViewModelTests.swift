@@ -28,7 +28,7 @@ final class TopCurrencyListViewModelTests: XCTestCase {
         cancellables.removeAll()
     }
     
-    func testWhenHasItemShouldMoveToLoadedState() throws {
+    func testStateTransitionWhenHasItemShouldMoveToLoadedState() throws {
         let loadingExpectation = XCTestExpectation(description: "Moves to loading state")
         let loadedExpectation = XCTestExpectation(description: "Moves to loaded state")
         
@@ -65,7 +65,7 @@ final class TopCurrencyListViewModelTests: XCTestCase {
              timeout: 1.0)
     }
     
-    func testWhenHasNoItemShouldMoveToLoadedState() throws {
+    func testStateTransitionWhenHasNoItemShouldMoveToLoadedState() throws {
         let loadingExpectation = XCTestExpectation(description: "Moves to loading state")
         let loadedExpectation = XCTestExpectation(description: "Moves to loaded state")
         
@@ -92,7 +92,7 @@ final class TopCurrencyListViewModelTests: XCTestCase {
              timeout: 1.0)
     }
     
-    func testWhenHasErrorShouldMoveToErrorState() throws {
+    func testStateTransitionWhenHasErrorShouldMoveToErrorState() throws {
         let loadingExpectation = XCTestExpectation(description: "Moves to loading state")
         let errorExpectation = XCTestExpectation(description: "Moves to error state")
 
