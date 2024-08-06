@@ -102,6 +102,7 @@ extension TopCurrencyListView {
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 56, height: 56)
                 })
+                .frame(width: 56, height: 56)
                 Spacer()
             }
             VStack(alignment: .leading) {
