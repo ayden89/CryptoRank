@@ -89,7 +89,7 @@
 		50F9CE0D2C60CDE500751FB3 /* Double+AbbreviationFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+AbbreviationFormat.swift"; sourceTree = "<group>"; };
 		50F9CE112C60D87800751FB3 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
 		50F9CE122C60D87800751FB3 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
-		50F9CE152C60D92900751FB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		50F9CE152C60D92900751FB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50F9CE162C60DD0900751FB3 /* ChangeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeType.swift; sourceTree = "<group>"; };
 		50F9CE192C60F38500751FB3 /* CurrencyDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyDetailView.swift; sourceTree = "<group>"; };
 		50F9CE1B2C60F3B300751FB3 /* CurrencyDetailContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyDetailContract.swift; sourceTree = "<group>"; };
@@ -149,7 +149,6 @@
 				50F9CE032C60C2C400751FB3 /* Enum */,
 				50F9CDD22C609DBC00751FB3 /* Error */,
 				50F9CE002C60C23300751FB3 /* Extension */,
-				50F9CE152C60D92900751FB3 /* Info.plist */,
 				50F9CDA92C60989400751FB3 /* Preview Content */,
 				50F9CDE32C60B42000751FB3 /* Repository */,
 				50F9CE0F2C60D86000751FB3 /* Resources */,
@@ -349,8 +348,9 @@
 		50F9CE0F2C60D86000751FB3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				50F9CE212C61006A00751FB3 /* String */,
 				50F9CE102C60D86800751FB3 /* Font */,
+				50F9CE322C624DE800751FB3 /* Info */,
+				50F9CE212C61006A00751FB3 /* String */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -390,6 +390,14 @@
 				50F9CE2D2C6228B500751FB3 /* MockRemoteDataSource.swift */,
 			);
 			path = Mock;
+			sourceTree = "<group>";
+		};
+		50F9CE322C624DE800751FB3 /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				50F9CE152C60D92900751FB3 /* Info.plist */,
+			);
+			path = Info;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -685,7 +693,7 @@
 				DEVELOPMENT_TEAM = D2JR53T83U;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CryptoRank/Info.plist;
+				INFOPLIST_FILE = CryptoRank/Resources/Info/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -716,7 +724,7 @@
 				DEVELOPMENT_TEAM = D2JR53T83U;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CryptoRank/Info.plist;
+				INFOPLIST_FILE = CryptoRank/Resources/Info/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
