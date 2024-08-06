@@ -7,7 +7,7 @@
 
 import Foundation
 
-class CurrencyRepository: CurrencyRepositoryProtocol {
+final class CurrencyRepository: CurrencyRepositoryProtocol {
     private let remoteDataSource: CurrencyRemoteDataSourceProtocol
     
     init(remoteDataSource: CurrencyRemoteDataSourceProtocol) {
