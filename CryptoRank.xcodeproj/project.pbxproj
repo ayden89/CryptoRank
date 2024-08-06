@@ -143,7 +143,6 @@
 			isa = PBXGroup;
 			children = (
 				50F9CDEF2C60BA0A00751FB3 /* App */,
-				50F9CDA72C60989400751FB3 /* Assets.xcassets */,
 				50F9CDD52C60A59E00751FB3 /* Data */,
 				50F9CDCD2C6099D800751FB3 /* DataSource */,
 				50F9CE032C60C2C400751FB3 /* Enum */,
@@ -248,8 +247,8 @@
 		50F9CDE32C60B42000751FB3 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
-				50F9CDF22C60BAE900751FB3 /* DI */,
 				50F9CDE42C60B43300751FB3 /* Currency */,
+				50F9CDF22C60BAE900751FB3 /* DI */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -257,8 +256,8 @@
 		50F9CDE42C60B43300751FB3 /* Currency */ = {
 			isa = PBXGroup;
 			children = (
-				50F9CDE92C60B56D00751FB3 /* CurrencyRepositoryProtocol.swift */,
 				50F9CDEB2C60B59300751FB3 /* CurrencyRepository.swift */,
+				50F9CDE92C60B56D00751FB3 /* CurrencyRepositoryProtocol.swift */,
 			);
 			path = Currency;
 			sourceTree = "<group>";
@@ -320,10 +319,10 @@
 		50F9CE002C60C23300751FB3 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				50F9CE012C60C24900751FB3 /* View+LoadingView.swift */,
-				50F9CE092C60C41E00751FB3 /* View+ErrorView.swift */,
-				50F9CE0B2C60CC6400751FB3 /* Error+AppError.swift */,
 				50F9CE0D2C60CDE500751FB3 /* Double+AbbreviationFormat.swift */,
+				50F9CE0B2C60CC6400751FB3 /* Error+AppError.swift */,
+				50F9CE092C60C41E00751FB3 /* View+ErrorView.swift */,
+				50F9CE012C60C24900751FB3 /* View+LoadingView.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -331,8 +330,8 @@
 		50F9CE032C60C2C400751FB3 /* Enum */ = {
 			isa = PBXGroup;
 			children = (
-				50F9CE042C60C2CD00751FB3 /* ViewElementState.swift */,
 				50F9CE162C60DD0900751FB3 /* ChangeType.swift */,
+				50F9CE042C60C2CD00751FB3 /* ViewElementState.swift */,
 			);
 			path = Enum;
 			sourceTree = "<group>";
@@ -348,6 +347,7 @@
 		50F9CE0F2C60D86000751FB3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				50F9CE332C624E4200751FB3 /* Asset */,
 				50F9CE102C60D86800751FB3 /* Font */,
 				50F9CE322C624DE800751FB3 /* Info */,
 				50F9CE212C61006A00751FB3 /* String */,
@@ -398,6 +398,14 @@
 				50F9CE152C60D92900751FB3 /* Info.plist */,
 			);
 			path = Info;
+			sourceTree = "<group>";
+		};
+		50F9CE332C624E4200751FB3 /* Asset */ = {
+			isa = PBXGroup;
+			children = (
+				50F9CDA72C60989400751FB3 /* Assets.xcassets */,
+			);
+			path = Asset;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
