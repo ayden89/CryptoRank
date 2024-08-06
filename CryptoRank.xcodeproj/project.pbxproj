@@ -10,7 +10,7 @@
 		50F9CDA42C60989300751FB3 /* CryptoRankApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F9CDA32C60989300751FB3 /* CryptoRankApp.swift */; };
 		50F9CDA82C60989400751FB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50F9CDA72C60989400751FB3 /* Assets.xcassets */; };
 		50F9CDAB2C60989400751FB3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50F9CDAA2C60989400751FB3 /* Preview Assets.xcassets */; };
-		50F9CDB52C60989400751FB3 /* CryptoRankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F9CDB42C60989400751FB3 /* CryptoRankTests.swift */; };
+		50F9CDB52C60989400751FB3 /* TopCurrencyListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F9CDB42C60989400751FB3 /* TopCurrencyListViewModelTests.swift */; };
 		50F9CDBF2C60989400751FB3 /* CryptoRankUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F9CDBE2C60989400751FB3 /* CryptoRankUITests.swift */; };
 		50F9CDC12C60989400751FB3 /* CryptoRankUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F9CDC02C60989400751FB3 /* CryptoRankUITestsLaunchTests.swift */; };
 		50F9CDD12C609D6A00751FB3 /* CurrencyRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F9CDD02C609D6A00751FB3 /* CurrencyRemoteDataSource.swift */; };
@@ -44,6 +44,7 @@
 		50F9CE1E2C60F3EF00751FB3 /* CurrencyDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F9CE1D2C60F3EF00751FB3 /* CurrencyDetailViewModel.swift */; };
 		50F9CE202C60F43200751FB3 /* CurrencyDetailContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F9CE1F2C60F43200751FB3 /* CurrencyDetailContainer.swift */; };
 		50F9CE232C61007A00751FB3 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 50F9CE222C61007A00751FB3 /* Localizable.xcstrings */; };
+		50F9CE262C620A6000751FB3 /* MockCurrencyRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F9CE252C620A6000751FB3 /* MockCurrencyRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,7 +70,7 @@
 		50F9CDA72C60989400751FB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50F9CDAA2C60989400751FB3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		50F9CDB02C60989400751FB3 /* CryptoRankTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoRankTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		50F9CDB42C60989400751FB3 /* CryptoRankTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoRankTests.swift; sourceTree = "<group>"; };
+		50F9CDB42C60989400751FB3 /* TopCurrencyListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopCurrencyListViewModelTests.swift; sourceTree = "<group>"; };
 		50F9CDBA2C60989400751FB3 /* CryptoRankUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoRankUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		50F9CDBE2C60989400751FB3 /* CryptoRankUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoRankUITests.swift; sourceTree = "<group>"; };
 		50F9CDC02C60989400751FB3 /* CryptoRankUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoRankUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -104,6 +105,7 @@
 		50F9CE1D2C60F3EF00751FB3 /* CurrencyDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyDetailViewModel.swift; sourceTree = "<group>"; };
 		50F9CE1F2C60F43200751FB3 /* CurrencyDetailContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyDetailContainer.swift; sourceTree = "<group>"; };
 		50F9CE222C61007A00751FB3 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		50F9CE252C620A6000751FB3 /* MockCurrencyRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCurrencyRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,17 +157,17 @@
 		50F9CDA22C60989300751FB3 /* CryptoRank */ = {
 			isa = PBXGroup;
 			children = (
-				50F9CE152C60D92900751FB3 /* Info.plist */,
-				50F9CE0F2C60D86000751FB3 /* Resources */,
-				50F9CE032C60C2C400751FB3 /* Enum */,
-				50F9CE002C60C23300751FB3 /* Extension */,
 				50F9CDEF2C60BA0A00751FB3 /* App */,
 				50F9CDA72C60989400751FB3 /* Assets.xcassets */,
 				50F9CDD52C60A59E00751FB3 /* Data */,
 				50F9CDCD2C6099D800751FB3 /* DataSource */,
+				50F9CE032C60C2C400751FB3 /* Enum */,
 				50F9CDD22C609DBC00751FB3 /* Error */,
+				50F9CE002C60C23300751FB3 /* Extension */,
+				50F9CE152C60D92900751FB3 /* Info.plist */,
 				50F9CDA92C60989400751FB3 /* Preview Content */,
 				50F9CDE32C60B42000751FB3 /* Repository */,
+				50F9CE0F2C60D86000751FB3 /* Resources */,
 				50F9CDF62C60BD0800751FB3 /* UI */,
 			);
 			path = CryptoRank;
@@ -182,7 +184,8 @@
 		50F9CDB32C60989400751FB3 /* CryptoRankTests */ = {
 			isa = PBXGroup;
 			children = (
-				50F9CDB42C60989400751FB3 /* CryptoRankTests.swift */,
+				50F9CE242C6209F700751FB3 /* Mock */,
+				50F9CDB42C60989400751FB3 /* TopCurrencyListViewModelTests.swift */,
 			);
 			path = CryptoRankTests;
 			sourceTree = "<group>";
@@ -402,6 +405,14 @@
 			path = String;
 			sourceTree = "<group>";
 		};
+		50F9CE242C6209F700751FB3 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				50F9CE252C620A6000751FB3 /* MockCurrencyRepository.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -576,7 +587,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50F9CDB52C60989400751FB3 /* CryptoRankTests.swift in Sources */,
+				50F9CE262C620A6000751FB3 /* MockCurrencyRepository.swift in Sources */,
+				50F9CDB52C60989400751FB3 /* TopCurrencyListViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -741,6 +753,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -771,6 +784,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

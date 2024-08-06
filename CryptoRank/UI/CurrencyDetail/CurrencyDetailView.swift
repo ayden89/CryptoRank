@@ -12,41 +12,39 @@ struct CurrencyDetailView<T: CurrencyDetailViewModelProtocol>: View {
     @StateObject var viewModel: T
     
     var body: some View {
-        NavigationStack {
-            ZStack {
-                LinearGradient(
-                    gradient: Gradient(colors: [.aquamarine.opacity(0.3),
-                                                .vividBlue.opacity(0.3)]),
-                    startPoint: .top,
-                    endPoint: .bottom
-                )
-                .edgesIgnoringSafeArea(.all)
-                
-                VStack(spacing: 0) {
-                    Text("topCurrency.title.main")
-                        .font(Font.custom("Poppins-Bold", size: 32.0))
-                        .textCase(.uppercase)
-                        .padding(16.0)
-                    ZStack {
-                        switch viewModel.currencyDetailState {
-                        case .loading, .notRequested:
-                            loadingView()
-                        case .loadingWithPreviousData(let data):
-                            ZStack {
-                                loadingView()
-                                detailView(item: data)
-                            }
-                        case .loaded(let data):
-                            detailView(item: data)
-                        case .error:
-                            errorView(onRetry: viewModel.handleRetryButtonTap)
-                        }
-                    }
-                    .frame(maxHeight: .infinity)
-                    
-                }
-            }
+        ZStack {
+            LinearGradient(
+                gradient: Gradient(colors: [.aquamarine.opacity(0.3),
+                                            .vividBlue.opacity(0.3)]),
+                startPoint: .top,
+                endPoint: .bottom
+            )
+            .edgesIgnoringSafeArea(.all)
+            
+             ZStack {
+                 switch viewModel.currencyDetailState {
+                 case .loading, .notRequested:
+                     loadingView()
+                 case .loadingWithPreviousData(let data):
+                     detailView(item: data)
+                         .overlay {
+                             ZStack {
+                                 Rectangle().fill(.white.opacity(0.7))
+                                 loadingView()
+                             }
+                             .cornerRadius(16)
+                             .padding(16)
+                         }
+                 case .loaded(let data):
+                     detailView(item: data)
+                 case .error:
+                     errorView(onRetry: viewModel.handleRetryButtonTap)
+                 }
+             }
+             .frame(maxHeight: .infinity)
         }
+        .navigationBarTitleDisplayMode(.inline)
+        .navigationTitle("Example")
         .onAppear(perform: {
             viewModel.onAppear()
         })
@@ -89,9 +87,33 @@ extension CurrencyDetailView {
             }
             .padding(24)
         }
+        .toolbar {
+            ToolbarItem(placement: .principal) {
+                HStack {
+                    Text(item.name)
+                        .font(Font.custom("Poppins-Bold", size: 32.0))
+                        .textCase(.uppercase)
+                        .padding(16.0)
+                    
+                    Spacer()
+                }
+            }
+            
+            ToolbarItem(placement: .primaryAction) {
+                AsyncImage(url: item.iconImageUrl,
+                           content: { result in
+                    result.image?
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 40, height: 40)
+                })
+            }
+        }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(.white.opacity(0.4))
+        .cornerRadius(16)
         .padding(16)
+        
     }
 }
 

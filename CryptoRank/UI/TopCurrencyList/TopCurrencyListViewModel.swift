@@ -24,6 +24,10 @@ final class TopCurrencyListViewModel: TopCurrencyListViewModelProtocol {
         fetchData()
     }
     
+    func handleListRefresh() {
+        fetchData()
+    }
+    
     private func fetchData() {
         Task {
             await MainActor.run { [weak self] in

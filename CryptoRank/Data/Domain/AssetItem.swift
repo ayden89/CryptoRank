@@ -55,6 +55,20 @@ struct AssetItem: Equatable, Identifiable {
         }
     }
     
+    init(id: String, rank: Int, symbol: String, name: String, supply: Double, maxSupply: Double?, marketCapInUsd: Double, volumeInUsdLast24Hr: Double, priceInUsd: Double, changePercentLast24Hr: Double, vwapLast24Hr: Double) {
+        self.id = id
+        self.rank = rank
+        self.symbol = symbol
+        self.name = name
+        self.supply = supply
+        self.maxSupply = maxSupply
+        self.marketCapInUsd = marketCapInUsd
+        self.volumeInUsdLast24Hr = volumeInUsdLast24Hr
+        self.priceInUsd = priceInUsd
+        self.changePercentLast24Hr = changePercentLast24Hr
+        self.vwapLast24Hr = vwapLast24Hr
+    }
+    
     init?(from dto: AssetItemDTO) {
         guard
             let rank = Int(dto.rank),

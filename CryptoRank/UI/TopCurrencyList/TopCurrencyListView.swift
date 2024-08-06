@@ -39,6 +39,8 @@ struct TopCurrencyListView<T: TopCurrencyListViewModelProtocol>: View {
                             errorView(onRetry: viewModel.handleRetryButtonTap)
                         }
                     }
+                    .frame(maxWidth: .infinity,
+                           maxHeight: .infinity)
                 }
             }
         }
@@ -57,6 +59,7 @@ final class PreviewTopCurrencyListViewModel: TopCurrencyListViewModelProtocol {
     
     func onAppear() { }
     func handleRetryButtonTap() { }
+    func handleListRefresh() { }
 }
 
 extension TopCurrencyListView {
@@ -79,6 +82,9 @@ extension TopCurrencyListView {
             .listRowSeparator(.hidden)
             .listRowInsets(.init(top: 8, leading: 16, bottom: 8, trailing: 16))
             .listSectionSeparator(.hidden)
+        }
+        .refreshable {
+            viewModel.handleListRefresh()
         }
         .listStyle(.plain)
         .background(.clear)

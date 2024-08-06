@@ -41,7 +41,6 @@ final class CurrencyDetailViewModel: CurrencyDetailViewModelProtocol {
                 
                 await MainActor.run { [weak self] in
                     guard let self else { return }
-                    
                     currencyDetailState = .loaded(data: result)
                 }
             } catch {

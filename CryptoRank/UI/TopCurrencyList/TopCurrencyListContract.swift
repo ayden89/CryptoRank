@@ -12,4 +12,5 @@ protocol TopCurrencyListViewModelProtocol: ObservableObject {
 
     func onAppear()
     func handleRetryButtonTap()
+    func handleListRefresh()
 }
